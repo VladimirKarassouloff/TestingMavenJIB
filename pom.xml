@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.txt.jib</groupId>
+    <artifactId>jib-docker-test</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+
+    <properties>
+        <registry></registry>
+        <myimage>test-jib</myimage>
+        <jib-maven-plugin.version>0.9.7</jib-maven-plugin.version>
+        <spring-boot-starter-parent.version>2.0.3.RELEASE</spring-boot-starter-parent.version>
+    </properties>
+
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>${spring-boot-starter-parent.version}</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+        </dependency>
+    </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>jib-maven-plugin</artifactId>
+                <version>${jib-maven-plugin.version}</version>
+                <configuration>
+                    <from>
+                        <image>openjdk:alpine</image>
+                        <credHelper>pass</credHelper>
+                    </from>
+                    <to>
+                        <image>hub.docker.com/r/vladimirkarassouloff/testjib</image>
+                        <credHelper>pass</credHelper>
+                    </to>
+                    <container>
+                        <jvmFlags>
+                            <jvmFlag>-Xms512m</jvmFlag>
+                            <jvmFlag>-Xdebug</jvmFlag>
+                            <jvmFlag>-Xmy:flag=jib-rules</jvmFlag>
+                        </jvmFlags>
+                        <mainClass>com.jib.Server</mainClass>
+                        <ports>
+                            <port>8080</port>
+                        </ports>
+                        <format>OCI</format>
+                    </container>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+
+</project>
