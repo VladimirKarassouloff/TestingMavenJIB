@@ -48,4 +48,10 @@ mvn compile jib:build -Dimage=<ImageNameOnDockerHub>```
 
 ```
 mvn compile com.google.cloud.tools:jib-maven-plugin:0.9.6:build -Dimage=vladimirkarassouloff/testjib
+
+docker pull vladimirkarassouloff/testjib
+
+wget -qO- http://172.XXX.XXX.XXX:8080/test?url=test
+OR
+wget -qO- http://127.0.0.1:8080/test?url=test
 ```
