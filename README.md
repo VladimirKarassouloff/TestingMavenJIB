@@ -1,4 +1,4 @@
-##### https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin
+##### Jib plugin : https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin
 
 #### Setuping the docker-credential-helper
 ```
