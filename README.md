@@ -47,5 +47,5 @@ mvn compile jib:build -Dimage=<ImageNameOnDockerHub>```
 ##### This project
 
 ```
-mvn compile com.google.cloud.tools:jib-maven-plugin:0.9.6:build -Dimage=vladimirkarassouloff/testjib -X -e
+mvn compile com.google.cloud.tools:jib-maven-plugin:0.9.6:build -Dimage=vladimirkarassouloff/testjib
 ```

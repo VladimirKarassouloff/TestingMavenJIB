@@ -14,13 +14,15 @@
         <myimage>test-jib</myimage>
         <jib-maven-plugin.version>0.9.7</jib-maven-plugin.version>
         <spring-boot-starter-parent.version>2.0.3.RELEASE</spring-boot-starter-parent.version>
+        <maven-shade-plugin.version>.1.1</maven-shade-plugin.version>
+        <mainClass>com.jib.Server</mainClass>
     </properties>
 
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>${spring-boot-starter-parent.version}</version>
+        <version>2.0.3.RELEASE</version>
     </parent>
 
     <dependencies>
@@ -53,6 +55,30 @@
 
     <build>
         <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3${maven-shade-plugin.version}</version>
+                <executions>
+                    <!-- Run shade goal on package phase -->
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <transformers>
+                                <!-- add Main-Class to manifest file -->
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>c${mainClass}</mainClass>
+                                </transformer>
+                            </transformers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
             <plugin>
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>jib-maven-plugin</artifactId>
@@ -72,11 +98,10 @@
                             <jvmFlag>-Xdebug</jvmFlag>
                             <jvmFlag>-Xmy:flag=jib-rules</jvmFlag>
                         </jvmFlags>
-                        <mainClass>com.jib.Server</mainClass>
+                        <mainClass>${mainClass}</mainClass>
                         <ports>
                             <port>8080</port>
                         </ports>
-                        <format>OCI</format>
                     </container>
                 </configuration>
             </plugin>
