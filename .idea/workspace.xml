@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6dee984-fe60-4e52-b772-c418a1bd61cb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jib/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jib/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jib-cache/9a9cc2de5ff00a236ccdc59aa014ef7e428704bce3230bcd8452be2c493d28d1.tar.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jib-cache/metadata-v2.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/jib-cache/metadata-v2.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,12 +22,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="xml" value="16" />
+          <entry key="xml" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="XML" value="16" />
+          <entry key="XML" value="17" />
         </counts>
       </usages-collector>
     </session>
@@ -43,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1265">
-              <caret line="105" column="32" lean-forward="true" selection-start-line="105" selection-start-column="32" selection-end-line="105" selection-end-column="32" />
+            <state relative-caret-position="1033">
+              <caret line="97" column="35" lean-forward="true" selection-start-line="97" selection-start-column="35" selection-end-line="97" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -372,12 +366,12 @@
       <workItem from="1532382076561" duration="2717000" />
       <workItem from="1532551374666" duration="289000" />
       <workItem from="1532551753039" duration="256000" />
-      <workItem from="1532552130759" duration="609000" />
+      <workItem from="1532552130759" duration="900000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14126000" />
+    <option name="totallyTimeSpent" value="14417000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="35" width="2880" height="1885" extended-state="6" />
@@ -454,8 +448,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1265">
-          <caret line="105" column="32" lean-forward="true" selection-start-line="105" selection-start-column="32" selection-end-line="105" selection-end-column="32" />
+        <state relative-caret-position="1033">
+          <caret line="97" column="35" lean-forward="true" selection-start-line="97" selection-start-column="35" selection-end-line="97" selection-end-column="35" />
         </state>
       </provider>
     </entry>

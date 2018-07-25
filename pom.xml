@@ -96,7 +96,6 @@
                         <jvmFlags>
                             <jvmFlag>-Xms512m</jvmFlag>
                             <jvmFlag>-Xdebug</jvmFlag>
-                            <jvmFlag>-Xmy:flag=jib-rules</jvmFlag>
                         </jvmFlags>
                         <mainClass>${mainClass}</mainClass>
                         <ports>
