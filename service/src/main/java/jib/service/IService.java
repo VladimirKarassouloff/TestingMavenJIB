@@ -10,6 +10,14 @@ import java.util.List;
 
 public interface IService<ENTITY, FILTER> {
 
+    default void flush() {
+        getRepository().flush();
+    }
+
+    default ENTITY save(ENTITY e) {
+        return getRepository().save(e);
+    }
+
     default Page<ENTITY> get(PageRequest pageRequest) {
         return getRepository().findAll(pageRequest);
     }
@@ -29,6 +37,15 @@ public interface IService<ENTITY, FILTER> {
     default void deleteAll(FILTER filter) {
         List<ENTITY> entitiesToDelete = getAll(filter);
         entitiesToDelete.forEach(e -> getRepository().delete(e));
+    }
+
+    default ENTITY getOneOrNull(FILTER filter) {
+        Page<ENTITY> entities = get(new PageRequest(0, 1), filter);
+        if (entities.hasContent() && !entities.getContent().isEmpty()) {
+            return entities.getContent().get(0);
+        } else {
+            return null;
+        }
     }
 
     CustomRepository<ENTITY, ?> getRepository();

@@ -44,7 +44,7 @@ public abstract class AbstractMapper<ENTITY, DTO> {
 
     public List<DTO> toDtoList(Collection<ENTITY> entities) {
         if (entities != null) {
-            entities.stream().map(this::toDTO).collect(Collectors.toList());
+            return entities.stream().map(this::toDTO).collect(Collectors.toList());
         } else {
             return new ArrayList<>();
         }
@@ -52,7 +52,7 @@ public abstract class AbstractMapper<ENTITY, DTO> {
 
     public Set<DTO> toDtoSet(Collection<ENTITY> entities) {
         if (entities != null) {
-            entities.stream().map(this::toDTO).collect(Collectors.toSet());
+            return entities.stream().map(this::toDTO).collect(Collectors.toSet());
         } else {
             return new HashSet<>();
         }

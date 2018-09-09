@@ -1,0 +1,7 @@
+jib/model/listener/IdGenerator.class
+jib/model/entities/AbstractEntity.class
+jib/model/entities/AuthorEntity$AuthorEntityBuilder.class
+jib/model/entities/VideoEntity$VideoEntityBuilder.class
+jib/model/entities/AuthorEntity.class
+jib/model/entities/VideoEntity.class
+jib/model/entities/BaseModelClass.class

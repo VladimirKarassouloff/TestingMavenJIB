@@ -3,7 +3,7 @@ package jib.controller;
 import jib.constant.Endpoint;
 import jib.dto.VideoDTO;
 import jib.mapper.VideoMapper;
-import jib.service.IVideoService;
+import jib.service.video.IVideoService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;

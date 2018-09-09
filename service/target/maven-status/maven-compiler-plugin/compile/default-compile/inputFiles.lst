@@ -1,0 +1,6 @@
+/home/vladimir/IdeaProjects/jibdocker/service/src/main/java/jib/service/author/AuthorServiceImpl.java
+/home/vladimir/IdeaProjects/jibdocker/service/src/main/java/jib/service/video/VideoServiceImpl.java
+/home/vladimir/IdeaProjects/jibdocker/service/src/main/java/jib/service/video/IVideoService.java
+/home/vladimir/IdeaProjects/jibdocker/service/src/main/java/jib/service/author/IAuthorService.java
+/home/vladimir/IdeaProjects/jibdocker/service/src/main/java/jib/service/IService.java
+/home/vladimir/IdeaProjects/jibdocker/service/src/main/java/jib/service/BaseServiceClass.java

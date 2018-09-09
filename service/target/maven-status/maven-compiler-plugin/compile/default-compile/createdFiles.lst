@@ -1,0 +1,6 @@
+jib/service/BaseServiceClass.class
+jib/service/author/AuthorServiceImpl.class
+jib/service/author/IAuthorService.class
+jib/service/video/VideoServiceImpl.class
+jib/service/video/IVideoService.class
+jib/service/IService.class

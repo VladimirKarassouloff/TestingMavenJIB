@@ -1,0 +1,13 @@
+jib/dao/author/AuthorSpecification$1.class
+jib/dao/author/AuthorFilter.class
+jib/dao/video/VideoRepository.class
+jib/dao/video/VideoFilter$VideoFilterBuilder.class
+jib/dao/video/VideoFilter.class
+jib/dao/author/AuthorRepository.class
+jib/dao/ISpecifier.class
+jib/dao/author/AuthorFilter$AuthorFilterBuilder.class
+jib/dao/BaseRepository.class
+jib/dao/video/VideoSpecification$1.class
+jib/dao/CustomRepository.class
+jib/dao/author/AuthorSpecification.class
+jib/dao/video/VideoSpecification.class

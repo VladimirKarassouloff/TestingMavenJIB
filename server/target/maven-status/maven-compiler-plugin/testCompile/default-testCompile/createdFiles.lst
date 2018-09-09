@@ -1,0 +1,5 @@
+integration/ScenarioSuite.class
+integration/AuthorCreationIntegrationTest.class
+integration/AbstractIntegrationTest.class
+integration/VideoCreationIntegrationTest.class
+integration/AbstractIntegrationTest$Initializer.class

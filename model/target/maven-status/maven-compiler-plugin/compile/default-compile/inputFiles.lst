@@ -1,0 +1,5 @@
+/home/vladimir/IdeaProjects/jibdocker/model/src/main/java/jib/model/entities/BaseModelClass.java
+/home/vladimir/IdeaProjects/jibdocker/model/src/main/java/jib/model/entities/VideoEntity.java
+/home/vladimir/IdeaProjects/jibdocker/model/src/main/java/jib/model/entities/AbstractEntity.java
+/home/vladimir/IdeaProjects/jibdocker/model/src/main/java/jib/model/entities/AuthorEntity.java
+/home/vladimir/IdeaProjects/jibdocker/model/src/main/java/jib/model/listener/IdGenerator.java

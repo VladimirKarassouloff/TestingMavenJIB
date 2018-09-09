@@ -1,0 +1,9 @@
+/home/vladimir/IdeaProjects/jibdocker/dao/src/main/java/jib/dao/video/VideoRepository.java
+/home/vladimir/IdeaProjects/jibdocker/dao/src/main/java/jib/dao/author/AuthorSpecification.java
+/home/vladimir/IdeaProjects/jibdocker/dao/src/main/java/jib/dao/BaseRepository.java
+/home/vladimir/IdeaProjects/jibdocker/dao/src/main/java/jib/dao/video/VideoSpecification.java
+/home/vladimir/IdeaProjects/jibdocker/dao/src/main/java/jib/dao/author/AuthorRepository.java
+/home/vladimir/IdeaProjects/jibdocker/dao/src/main/java/jib/dao/author/AuthorFilter.java
+/home/vladimir/IdeaProjects/jibdocker/dao/src/main/java/jib/dao/video/VideoFilter.java
+/home/vladimir/IdeaProjects/jibdocker/dao/src/main/java/jib/dao/CustomRepository.java
+/home/vladimir/IdeaProjects/jibdocker/dao/src/main/java/jib/dao/ISpecifier.java
